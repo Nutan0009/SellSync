@@ -1,0 +1,151 @@
+/* shops-directory-styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background: #fdf5e6;
+    margin: 0;
+    padding: 0;
+    color: #f79c1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #f79c1e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Search Filter Section */
+#search-filter {
+    background: #f8d492;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #f9e3b6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background: #fff;
+    color: #5d4037;
+}
+
+#filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+input[type="text"] {
+    width: calc(33.333% - 10px);
+    padding: 10px;
+    border: 1px solid #a1887f;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background: #fff;
+    color: #5d4037;
+}
+
+/* Shop Listings Section */
+#shop-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shop {
+    background: #efebe9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.shop-details {
+    flex-grow: 1;
+}
+
+.shop-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #5d4037;
+}
+
+.shop-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #8d6e63;
+}
+
+.shop-details a {
+    color: #8d6e63;
+    text-decoration: none;
+}
+
+.shop-details a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    #filters {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .shop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shop img {
+        width: 80px;
+        height: 80px;
+    }
+}
