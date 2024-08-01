@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Register Your Shop</h1>
+        <form id="shop-registration-form">
+            <div class="form-group">
+                <label for="shop-name">Shop Name</label>
+                <input type="text" id="shop-name" name="shopName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="products-offered">Products Offered</label>
+                <input type="text" id="products-offered" name="productsOffered" placeholder="Enter products separated by commas" required>
+                <div id="products-preview"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="specialty">Specialty</label>
+                <input type="text" id="specialty" name="specialty" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-info">Contact Information</label>
+                <input type="tel" id="contact-info" name="contactInfo" placeholder="Phone Number" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="url" id="website" name="website" placeholder="Website (if applicable)">
+            </div>
+
+            <div class="form-group">
+                <label for="images">Images</label>
+                <input type="file" id="images" name="images" accept="image/*" multiple required>
+            </div>
+
+            <div class="form-group">
+                <label for="logo">Logo</label>
+                <input type="file" id="logo" name="logo" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="owner-name">Owner's Name</label>
+                <input type="text" id="owner-name" name="ownerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="owner-contact">Owner's Contact</label>
+                <input type="tel" id="owner-contact" name="ownerContact" placeholder="Owner's Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="operating-hours">Operating Hours</label>
+                <input type="text" id="operating-hours" name="operatingHours" required>
+            </div>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
